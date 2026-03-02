@@ -1,1 +1,2 @@
-report.html linguist-vendored
+*.html linguist-vendored
+*.css linguist-vendored
