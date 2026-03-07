@@ -1,7 +1,33 @@
 [
-    {"username": "student", "password": "Password123", "expected_error": false},
-    {"username": "incorrectUser", "password": "Password123", "expected_error": true},
-    {"username": "student", "password": "wrongPassword", "expected_error": true},
-    {"username": "", "password": "", "expected_error": true},
-    {"username": "long_user_name_over_255_characters_test_case", "password": "123", "expected_error": true}
+    {
+        "username": "student", 
+        "password": "Password123", 
+        "expected_error": false,
+        "expected_message": "Logged In Successfully"
+    },
+    {
+        "username": "incorrectUser", 
+        "password": "Password123", 
+        "expected_error": true,
+        "expected_message": "Your username is invalid!"
+    },
+    {
+        "username": "student", 
+        "password": "wrongPassword", 
+        "expected_error": true,
+        "expected_message": "Your password is invalid!"
+    },
+    {
+        "username": "", 
+        "password": "", 
+        "expected_error": true,
+        "expected_message": "Your username is invalid!"
+
+    },
+    {
+        "username": "long_user_name_over_255_characters_test_case", 
+        "password": "123", 
+        "expected_error": true,
+        "expected_message": "Your username is invalid!"
+    }
 ]
